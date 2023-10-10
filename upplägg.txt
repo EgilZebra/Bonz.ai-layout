@@ -33,12 +33,14 @@ Inlämning senast: 15/10 23:59
 * Skapa HTML-träd med BEM classer
 * Planera CSS
 * Skapa CSS koden
-*
-*
-*
-*
+* -- GJORT FÖRSTA SIDAN --	
+* Lägg in logos
+* göra två about och booking
+* Rymdtema?
 
 -- STARTSIDA --
+
+
 
 -- ABOUTSIDA --
 

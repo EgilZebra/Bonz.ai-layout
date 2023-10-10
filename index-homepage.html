@@ -4,29 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9b908f3b77.js" crossorigin="anonymous"></script>
     <title>BONZ.AI - HOMEPAGE</title>
 </head>
 <body>
     <!-- This top nav bar will allways stay at the top, no matter which page you are visiting -->
     <!-- And keeps a visual cohesion to the page -->
-    <header>
-        <nav class="topnav"></nav>
+    <header class="topnav">
+        <nav class="topnav__wrapper">
+            <button class="button topnav__button" href="">ADDES BEACH HOTEL</button>
+            <a class="link topnav__link topnav__link--current" href="index-homepage.html">Home</a>
+            <a class="link topnav__link" href="index-booking.html">Rooms</a>
+            <a class="link topnav__link" href="index-about.html">About</a>
+        </nav>
     </header>
 
     <!-- This mainsection is the element that changes when you visit new pages -->
     <!-- It highlights what page of the site you are on. -->
-    <main class="">
+    <main class="mainwrapper">
         <!-- This maincard is the visual focuspoint.-->
         <!-- It have got a picture background. -->
         <!-- With a opaque block in the middle.  -->
         <!-- That contains a headline, some info and a buttoned link. -->
-        <section class="maincard"></section>
+        <section class="maincard">
+            <div class="maincard__wrapper">
+                <h1 class="maincard__headline">Luxurious Rooms</h1>
+                <figure class="maincard__figure"></figure>
+                <p class="maincard__text">Deluxe Rooms Starting At 299$</p>
+                <button class="button maincard__button">OUR ROOMS</button>
+            </div>
+        </section>
         <!-- This services section has information on the different activites that the hotel arranges.  -->
         <!-- It contains a healine and a navbar. -->
-        <section class="services"></section>
+        <section class="services">
+            <div class="services__wrapper services__wrapper--primary">
+                <h2 class="headline services__title">Services</h2>
+                <nav class="services__wrapper services__wrapper--secondary">
+                    <div class="services__wrapper services__wrapper--tertiary">
+                        <figure class="services__logo"><i class="fa-solid fa-martini-glass-citrus"></i></figure>
+                        <h3 class="services__headline">Evening</h3>
+                        <p class="services__text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, officia unde dolorum possimus delectus labore mollitia debitis sed.
+                        </p>
+                    </div>
+                    <div class="services__wrapper services__wrapper--tertiary">
+                        <figure class="services__logo"><i class="fa-solid fa-person-hiking"></i></figure>
+                        <h3 class="services__headline">Adventure</h3>
+                        <p class="services__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat expedita, et atque voluptatum eos voluptatibus blanditiis.
+                        </p>
+                    </div>
+                    <div class="services__wrapper services__wrapper--tertiary">
+                        <figure class="services__logo"><i class="fa-solid fa-van-shuttle"></i></figure>
+                        <h3 class="services__headline">Travel</h3>
+                        <p class="services__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt suscipit amet reprehenderit voluptatum recusandae quia corporis magni commodi incidunt.
+                        </p>
+                    </div>
+                    <div class="services__wrapper services__wrapper--tertiary">
+                        <figure class="services__logo"><i class="fa-solid fa-beer-mug-empty"></i></figure>
+                        <h3 class="services__headline">Party</h3>
+                        <p class="services__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aspernatur nesciunt quod blanditiis sequi vitae corrupti?
+                        </p>
+                    </div>
+                </nav>
+            </div>
+        </section>
         <!-- This section contains a grid of cards representing the rooms the hotel has to offer. -->
         <!-- it fills out the bottom of the page and gives you an option to scroll through the rooms in a quick manner.  -->
-        <section class="featured-rooms"></section>
+        <section class="featured-rooms">
+            <h2 class="headline featured-rooms__headline">Featured Rooms</h2>
+            <div class="featured-rooms__wrapper">
+                <div class="roomcard__wrapper--primary">
+                    <figure class="roomcard__image room-01">
+                        <div class="roomcard__wrapper--secondary">
+                            <h5 class="roomcard__price">$600</h5>
+                            <p class="roomcard__text">per night</p>
+                        </div>
+                    </figure>
+                    <h4 class="roomcard__title">Presidential Rom</h4>
+                    <figure class="roomcard__endbar"></figure>
+                </div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-02"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$500</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Double Deluxe Room</h4><figure class="roomcard__endbar"></figure></div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-03"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$400</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Family Deluxe Room</h4><figure class="roomcard__endbar"></figure></div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-04"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$300</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Single Deluxe Room</h4><figure class="roomcard__endbar"></figure></div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-05"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$250</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Double Medium Room</h4><figure class="roomcard__endbar"></figure></div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-06"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$200</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Single Medium Room</h4><figure class="roomcard__endbar"></figure></div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-07"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$125</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Single Economy Room</h4><figure class="roomcard__endbar"></figure></div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-08"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$150</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Double Economy Room</h4><figure class="roomcard__endbar"></figure></div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-09"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$150</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Family Economy Room</h4><figure class="roomcard__endbar"></figure></div>
+            </div>
+        </section>
     </main>
 
 </body>

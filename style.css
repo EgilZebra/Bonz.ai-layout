@@ -1,3 +1,290 @@
-body {
-    background-color: saddlebrown;
+/* -- STYLE SHEET FOR BONZ.AI HOTEL SITE -- */
+/* This will be the sigle stylesheet for all the pages of Bonz.ai */
+
+
+/* CSS reset, normalizing the browser experiances  */
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Starting from the top */
+/* I use BEM to name all elements in the HTML */
+/* And divided the CSS into easy to navigare regions */
+/*  */
+
+/* #region "main body" */
+
+.button {
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-weight: 900;
+}
+
+.headline {
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+}
+
+/* #region "topnav"*/
+
+/*  This contains the major pages of the site. */
+/*  For easy access and hightlights where you currently are. */
+
+    .topnav__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1rem;
+        width: 80%;
+    }
+
+    .link {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: 900;
+        letter-spacing: 0.1rem;
+    }
+
+    .topnav__link {
+        padding: 0.2rem 1rem 0.2rem 1rem;
+        border-radius: 1rem;
+    }
+
+    .topnav__link:hover {
+        color: white; 
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .topnav__link--current {
+        color: black;
+    }
+
+
+/* #endregion "topnav"*/
+
+/* #region "maincard"*/
+
+/* This is the visual entrance to the website. */
+/* It contains a big background-img and a block of information about our best rooms. */
+
+.maincard {
+        background-image: url(https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/226223403_1396207204113313_783527654571569031_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1ac024&_nc_ohc=gUUziaJX3t8AX961Pt3&_nc_ht=scontent.farn2-2.fna&oh=00_AfDIZOHQQpM-Eltsc8OnycptKOEtcghqPMU9DGbFkuJ6KA&oe=652A643F);
+        width: 100%;
+        height: 40rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .maincard__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 3rem 3rem 1rem 3rem;
+    }
+
+    .maincard__headline {
+        color: white;
+        font-size: 4rem;
+        font-weight: 900;
+        letter-spacing: 0.5rem;
+    }
+
+    .maincard__figure {
+        background-color: dodgerblue;
+        height: 0.3rem;
+        width: 13rem;
+    }
+
+    .maincard__text {
+        color: white;
+        font-size: 1.3rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .maincard__button {
+        letter-spacing: 0.2rem;
+    }
+
+/* #endregion "maincard"*/
+
+/* #region "services"*/
+
+/* This is the information for all the services that are available at the hotel-  */
+/* It includes a title and a collapsable grid for the services. */
+
+    .services {
+        width: 80%;
+        margin: auto;
+    }
+
+    .services__title {
+        margin-top: 2rem;
+    }
+
+    .services__wrapper {
+        padding: 2rem;
+    }
+
+    .services__wrapper--primary {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .services__wrapper--secondary {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+
+    .services__wrapper--tertiary {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .services__logo {
+        color: dodgerblue;
+        size: 200%;
+    }
+
+    .services__headline {
+        letter-spacing: 0.2rem;
+    }
+
+    .services__text {
+        text-align: center;
+    }
+
+
+/* #endregion "services"*/
+
+/* #region "featured-rooms"*/
+
+/* This is the simple area that all the roomcards should be placed in. */
+/* It includes the title and the collapsable grid for the cards */
+
+    .featured-rooms {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .featured-rooms__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+
+
+/* #endregion "featured-rooms"*/
+
+/* #region "roomcard"*/
+
+/* This is the styles for the individual cards for every room */
+/* it has a background-img, a price in the corner and the title at the bottom */
+
+    .roomcard__wrapper--primary {
+        margin: 1rem;
+        width: auto;
+        height: 10rem;
+    }
+
+    .roomcard__image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    .roomcard__title {
+        text-align: center;
+        margin: .5rem 0 .5rem 0;
+        letter-spacing: .2rem;
+        font-weight: 900;
+    }
+
+    .roomcard__price {
+        color: white;
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: .2rem;
+        font-size: 1.5rem;
+    }
+
+    .roomcard__text {
+        color: white;
+        text-align: center;
+        font-size: .8rem;
+        letter-spacing: .1rem;
+    }
+
+    .roomcard__wrapper--secondary {
+        justify-self: flex-start;
+        align-self: flex-start;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: .8rem;
+        border-bottom-right-radius: .5rem;
+    }
+
+    .roomcard__endbar {
+        width: 100%;
+        height: 0.1rem;
+        background-color: lightgray;
+    }
+
+    .room-01 {
+        background-image: url(photos/01-day.jpg);
+    }
+
+    .room-02{
+        background-image: url(photos/02-day.jpg);
+    }
+    .room-03{
+        background-image: url(photos/03-day.jpg);
+    }
+    .room-04{
+        background-image: url(photos/04-day.jpg);
+    }
+    .room-05{
+        background-image: url(photos/05-day.jpg);
+    }
+    .room-06{
+        background-image: url(photos/06-day.jpg);
+    }
+    .room-07{
+        background-image: url(photos/07-day.jpg);
+    }
+    .room-08{
+        background-image: url(photos/08-day.jpg);
+    }
+    .room-09{
+        background-image: url(photos/09-day.jpg);
+    }
+
+/* #endregion "roomcard"*/
+
+/* #region ""*/
+/* #endregion ""*/
+/* #region ""*/
+/* #endregion ""*/
+/* #region ""*/
+/* #endregion ""*/
+
+/* #endregion "main body" */
+
