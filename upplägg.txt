@@ -34,11 +34,10 @@ Inlämning senast: 15/10 23:59
 * Planera CSS				X
 * Skapa CSS koden			-
 * -- GJORT FÖRSTA SIDAN --		X
-* Lägg in logos
-* göra två about och booking
-* Rymdtema?
-* 5 bilder till about
-* 8(9) bilder till rooms
+* Lägg in logos				X
+* göra två about och booking		X
+* 5 bilder till about			X
+* 8(9) bilder till rooms		X
 
 -- STARTSIDA --
 

@@ -25,6 +25,11 @@
     font-weight: 900;
 }
 
+.button:hover {
+    cursor: pointer;
+    background-color: rgba(112, 183, 255, 0.998);
+}
+
 .headline {
     font-family: 'Limelight', sans-serif;
     text-align: center;
@@ -79,7 +84,7 @@
 
     .topnav__link:hover {
         color: white; 
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: dodgerblue;
     }
 
     .topnav__link--current {
@@ -92,8 +97,8 @@
 
 /* #region "maincard"*/
 
-/* This is the visual entrance to the website. */
-/* It contains a big background-img and a block of information about our best rooms. */
+    /* This is the visual entrance to the website. */
+    /* It contains a big background-img and a block of information about our best rooms. */
 
 .maincard {
         width: 100%;
@@ -142,11 +147,6 @@
         color: white;
         font-size: 1.3rem;
         letter-spacing: 0.2rem;
-    }
-
-    .maincard__button:hover {
-        cursor: pointer;
-        background-color: rgba(112, 183, 255, 0.998);
     }
 
     .maincard__link {
@@ -366,6 +366,7 @@
     .booking {
         width: 80%;
         margin: auto;
+        margin-top: 5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -404,9 +405,11 @@
         letter-spacing: .2rem;
     }
 
-    .booking__button:hover {
-        cursor: pointer;
-        background-color: rgba(112, 183, 255, 0.998);
+    .booking__bar {
+        width: 30rem;
+        height: .2rem;
+        background-color: dodgerblue;
+        margin: 3rem 0 .2rem 0;
     }
 
     @media (max-width: 40rem) {
@@ -539,7 +542,7 @@
 
     /* #endregion "about"*/
 
-/* #region "familyroom" */
+/* #region "roominfo" */
 
     .familyroom {
         background-image: url(photos/09-day.jpg);
@@ -555,11 +558,15 @@
 
     .roominfo__wrapper {
         display: flex;
+        width: 80%;
+        margin: auto;
+        margin-top: 0;
     }
 
     .roominfo__wrapper--secondary {
         flex-direction: column;
         padding: 2rem;
+        height: auto;
     }
 
     .roominfo__headline {
@@ -567,6 +574,9 @@
     }
 
     .roominfo__wrapper--tetriary {
+        width: 80%;
+        margin: auto;
+        height: auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
         grid-template-rows: auto;
@@ -575,9 +585,84 @@
 
     .roominfo__image {
         width: 100%;
-        height: auto;
+        height: 12rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
     }
 
+    .roominfo__image01 {
+        background-image: url(photos/01-day.jpg) ;
+    }
+    .roominfo__image01:hover {
+        background-image: url(photos/01-night.jpg) ;
+    }
+    .roominfo__image02 {
+        background-image: url(photos/02-day.jpg) ;
+    }
+    .roominfo__image02:hover {
+        background-image: url(photos/02-night.jpg) ;
+    }
+    .roominfo__image03 {
+        background-image: url(photos/03-day.jpg) ;
+    }
+    .roominfo__image03:hover {
+        background-image: url(photos/03-night.jpg) ;
+    }
+    .roominfo__image04 {
+        background-image: url(photos/04-day.jpg) ;
+    }
+    .roominfo__image04:hover {
+        background-image: url(photos/04-night.jpg) ;
+    }
+    .roominfo__image05 {
+        background-image: url(photos/05-day.jpg) ;
+    }
+    .roominfo__image05:hover {
+        background-image: url(photos/05-night.jpg) ;
+    }
+    .roominfo__image06 {
+        background-image: url(photos/06-day.jpg) ;
+    }
+    .roominfo__image06:hover {
+        background-image: url(photos/06-night.jpg) ;
+    }
+    .roominfo__image07 {
+        background-image: url(photos/07-day.jpg) ;
+    }
+    .roominfo__image07:hover {
+        background-image: url(photos/07-night.jpg) ;
+    }
+    .roominfo__image08 {
+        background-image: url(photos/08-day.jpg) ;
+    }
+    .roominfo__image08:hover {
+        background-image: url(photos/08-night.jpg) ;
+    }
+    .roominfo__image09 {
+        background-image: url(photos/09-day.jpg) ;
+    }
+    .roominfo__image09:hover {
+        background-image: url(photos/09-night.jpg) ;
+    }
+
+    .roominfo__button {
+        justify-self: center;
+        align-self: center;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .roominfo__link {
+        text-decoration: none;
+        color: white;
+    }
+
+    @media (max-width: 40rem) {
+        .roominfo__wrapper {
+            flex-direction: column;
+        }
+    }
 
 /* #endregion "familyroom" */
 
