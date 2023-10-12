@@ -29,19 +29,31 @@ Inlämning senast: 15/10 23:59
 //
 
 
-* Läsa om BEM-stadard
-* Skapa HTML-träd med BEM classer
-* Planera CSS
-* Skapa CSS koden
-* -- GJORT FÖRSTA SIDAN --	
+* Läsa om BEM-stadard			X
+* Skapa HTML-träd med BEM classer	X
+* Planera CSS				X
+* Skapa CSS koden			-
+* -- GJORT FÖRSTA SIDAN --		X
 * Lägg in logos
 * göra två about och booking
 * Rymdtema?
+* 5 bilder till about
+* 8(9) bilder till rooms
 
 -- STARTSIDA --
 
 
 
 -- ABOUTSIDA --
+
+
+
+Our mission
+	the power of AI, for yuor vaccation
+why AI
+how do we use AI
+what does it mean for you?
+enviroment
+the future
 
 -- BOKNINGSSIDA --

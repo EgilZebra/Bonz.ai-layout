@@ -10,8 +10,10 @@
     <!-- This top nav bar will allways stay at the top, no matter which page you are visiting -->
     <!-- And keeps a visual cohesion to the page -->
     <header class="topnav">
+        <figure class="topnav__figure">
+            <img class="topnav__logo" src="logos/bonz.ai-logo-color-landscape.png" alt="Bonz.ai logo">
+        </figure>
         <nav class="topnav__wrapper">
-            <button class="button topnav__button" href="">ADDES BEACH HOTEL</button>
             <a class="link topnav__link" href="index-homepage.html">Home</a>
             <a class="link topnav__link topnav__link--current" href="index-booking.html">Rooms</a>
             <a class="link topnav__link" href="index-about.html">About</a>
@@ -20,19 +22,135 @@
 
     <!-- This mainsection is the element that changes when you visit new pages -->
     <!-- It highlights what page of the site you are on. -->
-    <main class="">
+    <main class="mainwrapper">
+
         <!-- This maincard is the visual focuspoint.-->
         <!-- It have got a picture background. -->
         <!-- With a opaque block in the middle.  -->
-        <!-- That contains a headline, some info and a buttoned link. -->
-        <section class="maincard"></section>
-        <!-- This services section has information on the different activites that the hotel arranges.  -->
-        <!-- It contains a healine and a navbar. -->
-        <section class="services"></section>
+        <!-- That contains a headline and some info. -->
+        <section class="maincard bookingcard">
+            <div class="maincard__wrapper">
+                <img class="maincard__logo" src="logos/bonz.ai-logo-white-symbol.png" alt="Bonz.ai logo">
+                <h1 class="maincard__headline">Pick a Room</h1>
+                <figure class="maincard__figure"></figure>
+                <p class="maincard__text">Deluxe Rooms Starting At 299$</p>
+            </div>
+        </section>
+
+
+        <section class="booking">
+            <h1 class="headline booking__headline">Booking</h1>
+            <nav class="booking__navbar">
+                <div class="booking__menu">
+                    <p>BEDS:</p>
+                    <select class="booking__beds">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                      </select>
+                </div>
+                <div class="booking__menu">
+                    <p>ADULTS:</p>
+                    <select class="booking__adults">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                      </select>
+                </div>
+                <div class="booking__menu">
+                    <p>CHILDREN:</p>
+                    <select class="booking__beds">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                      </select>
+                </div>
+                <div class="booking__menu">
+                    <p>FROM:</p>
+                    <input type="date">
+                </div>
+                <div class="booking__menu">
+                    <p>TO:</p>
+                    <input type="date">
+                </div>
+                <div class="booking__menu">
+                    <p>PRICE:</p>
+                    <input type="range" min="1" max="999" value="$">
+                </div>
+
+                <button class="booking__button">search!</button>
+            </nav>
+        </section>
+
+
+
+
         <!-- This section contains a grid of cards representing the rooms the hotel has to offer. -->
         <!-- it fills out the bottom of the page and gives you an option to scroll through the rooms in a quick manner.  -->
-        <section class="featured-rooms"></section>
+        <section class="featured-rooms">
+            <h2 class="headline featured-rooms__headline">Featured Rooms</h2>
+            <div class="featured-rooms__wrapper">
+                <div class="roomcard__wrapper--primary">
+                    <figure class="roomcard__image room-01">
+                        <div class="roomcard__wrapper--secondary">
+                            <h5 class="roomcard__price">$600</h5>
+                            <p class="roomcard__text">per night</p>
+                        </div>
+                    </figure>
+                    <h4 class="roomcard__title">Presidential Rom</h4>
+                    <figure class="roomcard__endbar"></figure>
+                </div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-02"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$500</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Double Deluxe Room</h4><figure class="roomcard__endbar"></figure></div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-03"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$400</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Family Deluxe Room</h4><figure class="roomcard__endbar"></figure></div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-04"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$300</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Single Deluxe Room</h4><figure class="roomcard__endbar"></figure></div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-05"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$250</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Family Medium Room</h4><figure class="roomcard__endbar"></figure></div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-06"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$200</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Double Medium Room</h4><figure class="roomcard__endbar"></figure></div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-07"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$150</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Single Medium Room</h4><figure class="roomcard__endbar"></figure></div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-08"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$125</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Double Economy Room</h4><figure class="roomcard__endbar"></figure></div>
+                <div class="roomcard__wrapper--primary"><figure class="roomcard__image room-09"><div class="roomcard__wrapper--secondary"><h5 class="roomcard__price">$75</h5><p class="roomcard__text">per night</p></div></figure><h4 class="roomcard__title">Single Economy Room</h4><figure class="roomcard__endbar"></figure></div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <figure class="footer__imgwrapper">
+            <img class="footer__logo" src="logos/bonz.ai-logo-color-portrait-full.png" alt="">
+        </figure>
+        <div class="footer__wrapper--secondary">
+            <a class="link footer__link" href="https://www.google.se/maps/place/37%C2%B044'42.1%22N+105%C2%B052'32.2%22W/@37.7450234,-105.8764773,249m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d37.745022!4d-105.875608?entry=ttu">Where</a>
+            <p class="footer__text">
+                <br>Big City Street 12 <br> 534 23 Bigcity
+            </p>
+        </div>
+        <div class="footer__wrapper--secondary">
+            <a class="link footer__link" href="">Contact</a>
+            <p class="footer__text">
+                <br>Telephone <br> 012-34 56 78 <br>  06:30 - 21:30 <br><br>Frontdesk <br> 06:30 - 21:30 <br><br> E-mail <br> <a class="footer__link--mail" href="">info@bonz.ai</a> <br><br> Every day  
+            </p>
+        </div>
+        <div class="footer__wrapper--secondary">
+            <a class="link footer__link" href="">Work at Bonz-ai</a>
+            <p class="footer__text">
+                <br>Join our family <br> come work at Bonz.ai <br> look at our <a class="footer__link--positions" href="XXX">open positions</a>
+            </p>
+        </div>
+
+    </footer>
 
 </body>
 </html>

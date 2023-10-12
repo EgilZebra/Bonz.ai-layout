@@ -32,8 +32,27 @@
 
 /* #region "topnav"*/
 
-/*  This contains the major pages of the site. */
-/*  For easy access and hightlights where you currently are. */
+    /*  This contains the major pages of the site. */
+    /*  For easy access and hightlights where you currently are. */
+    .topnav {
+        background-color: rgba(119, 136, 153);
+        display: flex;
+        flex-direction: row;   
+        height: 3rem;
+        position: fixed;  
+        width: 100%;
+        border-bottom: solid .1rem rgba(0, 0, 0, 0.4);
+    }    
+
+    .topnav__figure {
+        margin: .2rem;
+    }
+
+    .topnav__logo {
+        width: auto;
+        height: 100%;
+    }
+
 
     .topnav__wrapper {
         display: flex;
@@ -68,13 +87,13 @@
 
 /* #endregion "topnav"*/
 
+
 /* #region "maincard"*/
 
 /* This is the visual entrance to the website. */
 /* It contains a big background-img and a block of information about our best rooms. */
 
 .maincard {
-        background-image: url(https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/226223403_1396207204113313_783527654571569031_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1ac024&_nc_ohc=gUUziaJX3t8AX961Pt3&_nc_ht=scontent.farn2-2.fna&oh=00_AfDIZOHQQpM-Eltsc8OnycptKOEtcghqPMU9DGbFkuJ6KA&oe=652A643F);
         width: 100%;
         height: 40rem;
         background-repeat: no-repeat;
@@ -84,13 +103,23 @@
         align-items: center;
     }
 
+    .homepagecard {
+        background-image: url(https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/226223403_1396207204113313_783527654571569031_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1ac024&_nc_ohc=gUUziaJX3t8AX961Pt3&_nc_ht=scontent.farn2-2.fna&oh=00_AfDIZOHQQpM-Eltsc8OnycptKOEtcghqPMU9DGbFkuJ6KA&oe=652A643F);
+    }
+
     .maincard__wrapper{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
         background-color: rgba(0, 0, 0, 0.5);
-        padding: 3rem 3rem 1rem 3rem;
+        padding: .2rem 3rem 1rem 3rem;
+    }
+
+    .maincard__logo {
+        width: 5rem;
+        height: auto;
+        margin-bottom: -1rem;
     }
 
     .maincard__headline {
@@ -112,16 +141,42 @@
         letter-spacing: 0.2rem;
     }
 
-    .maincard__button {
+    .maincard__button:hover {
+        cursor: pointer;
+        background-color: rgba(112, 183, 255, 0.998);
+    }
+
+    .maincard__link {
+        text-decoration: none;
+        color: white;
         letter-spacing: 0.2rem;
+    }
+
+    @media (max-width: 40rem) {
+        .maincard {
+            justify-content :start;
+            align-items: start;
+            padding-top: 3rem;
+            height: 100%;
+        }
+
+        .maincard__wrapper {
+            width: 100%;
+        }
+
+        .maincard__headline {
+            font-size: 2rem;
+        }
+
     }
 
 /* #endregion "maincard"*/
 
+
 /* #region "services"*/
 
-/* This is the information for all the services that are available at the hotel-  */
-/* It includes a title and a collapsable grid for the services. */
+    /* This is the information for all the services that are available at the hotel-  */
+    /* It includes a title and a collapsable grid for the services. */
 
     .services {
         width: 80%;
@@ -154,6 +209,14 @@
         gap: 1rem;
     }
 
+    .services__wrapper--tertiary:hover {
+        cursor: pointer;
+        zoom: 1.001;
+        border-top: solid .1rem rgba(0, 0, 0, 0.2);
+        border-bottom: solid .1rem rgba(0, 0, 0, 0.2);
+        opacity: .8;
+    }
+
     .services__logo {
         color: dodgerblue;
         size: 200%;
@@ -170,10 +233,11 @@
 
 /* #endregion "services"*/
 
+
 /* #region "featured-rooms"*/
 
-/* This is the simple area that all the roomcards should be placed in. */
-/* It includes the title and the collapsable grid for the cards */
+    /* This is the simple area that all the roomcards should be placed in. */
+    /* It includes the title and the collapsable grid for the cards */
 
     .featured-rooms {
         width: 80%;
@@ -193,15 +257,21 @@
 
 /* #endregion "featured-rooms"*/
 
+
 /* #region "roomcard"*/
 
-/* This is the styles for the individual cards for every room */
-/* it has a background-img, a price in the corner and the title at the bottom */
+    /* This is the styles for the individual cards for every room */
+    /* it has a background-img, a price in the corner and the title at the bottom */
 
     .roomcard__wrapper--primary {
         margin: 1rem;
         width: auto;
         height: 10rem;
+    }
+
+    .roomcard__wrapper--primary:hover {
+        cursor: pointer;
+        opacity: 0.6;
     }
 
     .roomcard__image {
@@ -249,42 +319,190 @@
     }
 
     .room-01 {
-        background-image: url(photos/01-day.jpg);
+        background-image: url(https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
     }
 
     .room-02{
-        background-image: url(photos/02-day.jpg);
+        background-image: url(https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
     }
     .room-03{
-        background-image: url(photos/03-day.jpg);
+        background-image: url(https://images.unsplash.com/photo-1608198399988-341f712c3711?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
     }
     .room-04{
-        background-image: url(photos/04-day.jpg);
+        background-image: url(https://images.unsplash.com/photo-1592229505726-ca121723b8ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80);
     }
     .room-05{
-        background-image: url(photos/05-day.jpg);
+        background-image: url(photos/04-day.jpg);
     }
     .room-06{
-        background-image: url(photos/06-day.jpg);
+        background-image: url(https://images.unsplash.com/photo-1594130139005-3f0c0f0e7c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1624&q=80);
     }
     .room-07{
-        background-image: url(photos/07-day.jpg);
+        background-image: url(https://images.unsplash.com/photo-1590490359683-658d3d23f972?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80);
     }
     .room-08{
-        background-image: url(photos/08-day.jpg);
+        background-image: url(https://d3dqioy2sca31t.cloudfront.net/Projects/cms/production/000/030/453/original/de5b1c321697dca51799a26c0ac5c81e/article-tips-sleeping-london-hotel.jpg);
     }
     .room-09{
-        background-image: url(photos/09-day.jpg);
+        background-image: url(https://c2.staticflickr.com/2/1308/1386765575_8dbba33ece_b.jpg);
     }
 
 /* #endregion "roomcard"*/
 
+
 /* #region ""*/
+
+/* This is the booking section. */
+
+/* This is where you can search and book our rooms */
+/* It contains all the different bars to select you preferences */
+
+    .bookingcard {
+        background-image: url(https://hips.hearstapps.com/bestproducts/assets/18/03/1516295489-vale-garden-residence.jpg) ;
+    }
+
+    .booking {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .booking__navbar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .booking__menu {
+        display: flex;
+        flex-direction: column;
+    }
 /* #endregion ""*/
-/* #region ""*/
-/* #endregion ""*/
-/* #region ""*/
-/* #endregion ""*/
+
+
+/* #region "footer"*/
+
+    /* This section includes a logo and important links for contacting the company. */
+    /* It contains three grid-columns, one for the logo and two for the info/links. */
+
+    .footer {
+        min-height: 20rem;
+        background-color: rgba(119, 136, 153);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        padding: 1rem 5rem 1rem 5rem;
+        gap: 2rem;
+        border-top: solid .1rem rgba(0, 0, 0, 0.4);
+
+    }
+
+    .footer__imgwrapper {
+        object-fit: contain;
+        margin: 3rem;
+    }
+
+    .footer__logo {
+        width: 100%;
+        height: auto;
+    }
+    
+    footer
+    .footer__text {
+        color: white;
+    }
+
+/* #endregion "footer"*/
+
+
+/* #region "about"*/
+
+    /* This section is about our mission and work here at Bonz-ai. */
+    /* It is a simple text and image layout with the two elements switching places for each row. */
+
+    .about {
+        margin-bottom: 5rem;
+    }
+
+    .aboutcard {
+        background-image: url(https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2022/07/21/0513/UC040-R004-Lobby.jpg/UC040-R004-Lobby.16x9.jpg?imwidth=1920);
+    }
+
+    .about__image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .about__headline {
+        font-size: 3rem;
+        margin-top: 2rem;
+        padding: 2rem 3rem 2rem 3rem;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+    }
+
+    .about__wrapper--secondary {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 5rem;
+        gap: 2rem;
+    }
+
+    .about__wrapper--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .about__image--logo {
+        object-fit: contain;
+    }
+
+    .about__image--small {
+        height: 10rem;
+        width: 15rem;
+        object-fit: cover;
+    }
+
+    .about__title {
+        text-align: left;
+    }
+
+    .about__bar {
+        width: 30rem;
+        height: .2rem;
+        background-color: dodgerblue;
+        margin: .2rem 0 .2rem 0;
+    }
+
+    @media (max-width: 40rem) {
+        .about__wrapper--secondary {
+            flex-direction: column;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .about__bar {
+            width: 80%;
+        }
+
+        .about__wrapper--tetriary {
+            align-self: center;
+        }
+
+        .about__image--logo {
+            max-height: 5rem;
+        }
+    }
+
+    /* #endregion "about"*/
 
 /* #endregion "main body" */
 
