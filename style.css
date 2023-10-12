@@ -9,6 +9,7 @@
     box-sizing: border-box;
 }
 
+
 /* Starting from the top */
 /* I use BEM to name all elements in the HTML */
 /* And divided the CSS into easy to navigare regions */
@@ -25,8 +26,9 @@
 }
 
 .headline {
+    font-family: 'Limelight', sans-serif;
     text-align: center;
-    font-weight: 900;
+    font-weight: 400;
     letter-spacing: 0.2rem;
 }
 
@@ -136,6 +138,7 @@
     }
 
     .maincard__text {
+        font-family: 'Poiret One', sans-serif;
         color: white;
         font-size: 1.3rem;
         letter-spacing: 0.2rem;
@@ -350,10 +353,9 @@
 /* #endregion "roomcard"*/
 
 
-/* #region ""*/
+/* #region "booking"*/
 
 /* This is the booking section. */
-
 /* This is where you can search and book our rooms */
 /* It contains all the different bars to select you preferences */
 
@@ -380,8 +382,41 @@
     .booking__menu {
         display: flex;
         flex-direction: column;
+        width: 6rem;
     }
-/* #endregion ""*/
+
+    .booking__text {
+        font-family: 'Poiret One', sans-serif;
+        font-weight: 700;
+    }
+
+    .booking__button {
+        width: 6rem;
+        border-radius: 1rem;
+        background-color: dodgerblue;
+        border: none;
+    }
+
+    .booking__link {
+        text-decoration: none;
+        color: white;
+        font-family: 'Poiret One', sans-serif;
+        letter-spacing: .2rem;
+    }
+
+    .booking__button:hover {
+        cursor: pointer;
+        background-color: rgba(112, 183, 255, 0.998);
+    }
+
+    @media (max-width: 40rem) {
+        .booking__navbar {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+/* #endregion "booking"*/
 
 
 /* #region "footer"*/
@@ -503,6 +538,49 @@
     }
 
     /* #endregion "about"*/
+
+/* #region "familyroom" */
+
+    .familyroom {
+        background-image: url(photos/09-day.jpg);
+    }
+
+    .roominfo {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        gap: 2rem;
+
+    }
+
+    .roominfo__wrapper {
+        display: flex;
+    }
+
+    .roominfo__wrapper--secondary {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .roominfo__headline {
+        text-align: center;
+    }
+
+    .roominfo__wrapper--tetriary {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+
+    .roominfo__image {
+        width: 100%;
+        height: auto;
+    }
+
+
+/* #endregion "familyroom" */
+
 
 /* #endregion "main body" */
 

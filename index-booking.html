@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <title>BONZ.AI - ABOUT</title>
 </head>
 <body>
@@ -31,7 +37,7 @@
         <section class="maincard bookingcard">
             <div class="maincard__wrapper">
                 <img class="maincard__logo" src="logos/bonz.ai-logo-white-symbol.png" alt="Bonz.ai logo">
-                <h1 class="maincard__headline">Pick a Room</h1>
+                <h1 class="headline maincard__headline">Pick a Room</h1>
                 <figure class="maincard__figure"></figure>
                 <p class="maincard__text">Deluxe Rooms Starting At 299$</p>
             </div>
@@ -42,7 +48,7 @@
             <h1 class="headline booking__headline">Booking</h1>
             <nav class="booking__navbar">
                 <div class="booking__menu">
-                    <p>BEDS:</p>
+                    <p class="booking__text">BEDS:</p>
                     <select class="booking__beds">
                         <option>0</option>
                         <option>1</option>
@@ -55,7 +61,7 @@
                       </select>
                 </div>
                 <div class="booking__menu">
-                    <p>ADULTS:</p>
+                    <p class="booking__text">ADULTS:</p>
                     <select class="booking__adults">
                         <option>0</option>
                         <option>1</option>
@@ -68,7 +74,7 @@
                       </select>
                 </div>
                 <div class="booking__menu">
-                    <p>CHILDREN:</p>
+                    <p class="booking__text">CHILDREN:</p>
                     <select class="booking__beds">
                         <option>0</option>
                         <option>1</option>
@@ -81,19 +87,19 @@
                       </select>
                 </div>
                 <div class="booking__menu">
-                    <p>FROM:</p>
+                    <p class="booking__text">FROM:</p>
                     <input type="date">
                 </div>
                 <div class="booking__menu">
-                    <p>TO:</p>
+                    <p class="booking__text">TO:</p>
                     <input type="date">
                 </div>
                 <div class="booking__menu">
-                    <p>PRICE:</p>
+                    <p class="booking__text">PRICE:</p>
                     <input type="range" min="1" max="999" value="$">
                 </div>
 
-                <button class="booking__button">search!</button>
+                <button class="button booking__button"><a class="booking__link" href="index-room.html">SEARCH</a></button>
             </nav>
         </section>
 
@@ -127,6 +133,9 @@
         </section>
     </main>
 
+    <!-- This foter section in the last thing on the page. -->
+    <!-- It contains a logo and a few important links and infos. -->
+    <!-- But it's not the first things a customer looks for. -->
     <footer class="footer">
         <figure class="footer__imgwrapper">
             <img class="footer__logo" src="logos/bonz.ai-logo-color-portrait-full.png" alt="">
