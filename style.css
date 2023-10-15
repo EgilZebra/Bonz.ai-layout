@@ -91,6 +91,25 @@
         color: black;
     }
 
+    @media (max-width: 30rem) {
+        .topnav {
+            flex-direction: column;
+            height: 4rem;
+        }
+        .topnav__figure {
+            margin: 0;
+        }
+        .topnav__logo {
+            height: 2rem;
+        }
+        .topnav__wrapper {
+            width: 100%;
+            height: 1.5rem;
+            margin: 0;
+        }
+
+    }
+
 
 /* #endregion "topnav"*/
 
@@ -159,7 +178,7 @@
         .maincard {
             justify-content :start;
             align-items: start;
-            padding-top: 3rem;
+            padding-top: 4rem;
             height: 100%;
         }
 
@@ -169,6 +188,10 @@
 
         .maincard__headline {
             font-size: 2rem;
+        }
+
+        .maincard__text {
+            text-align: center;
         }
 
     }
@@ -233,6 +256,12 @@
         text-align: center;
     }
 
+    @media (max-width: 40rem) {
+        .services {
+            width: 100%;
+        }
+    }
+
 
 /* #endregion "services"*/
 
@@ -257,6 +286,11 @@
         gap: 1rem;
     }
 
+    @media (max-width: 40rem) {
+        .featured-rooms {
+            width: 100%;
+        }
+    }
 
 /* #endregion "featured-rooms"*/
 
